@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <!-- Metadata of the Webpage -->
+
+  <head>
+    <!-- The title that will appear at the top of our tab bar-->
+    <title>Whale Fun</title>
+
+    <!--Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--The sleep at the top of the page-->
+    <link rel="icon" type="image/x-icon" href="whali.png" />
+
+    <!--Adding In Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---input icon --->
+    <script
+      src="https://kit.fontawesome.com/2b1c6b1e57.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-color: #c6e6f7;
+        color: white;
+        font-family: "Oswald", sans-serif;
+        margin: 0;
+      }
+
+      #speakbtn:hover {
+        background-color: aqua;
+        color: #262dff;
+      }
+
+      #speakbtn {
+        transition: 0.2s ease-in-out all;
+        margin: 30px auto;
+        width: 30px;
+        height: 30px;
+        background-color: #262dff;
+        color: #fff;
+        font-family: "Comic Neue";
+        cursor: pointer;
+        padding: 15px 15px 0;
+        border-radius: 30px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      section {
+        margin: 75px 0;
+        width: 100%;
+        max-width: 100%;
+      }
+      .slideSection {
+        background-color: #000;
+      }
+      .slideContainer {
+        padding: 30px 30px 0;
+      }
+      .articleContainer {
+        padding: 30px 0;
+      }
+      .image_container > img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .iconContainer {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media screen and (max-width: 920px) {
+        .textboxContainer {
+          flex-direction: column;
+        }
+        .iconContainer {
+          flex-direction: row !important;
+        }
+        .iconContainer > img {
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+
+    <!--[if gte mso 9
+      ]><xml>
+        <mso:CustomDocumentProperties>
+          <mso:Attachment msdt:dt="string">1</mso:Attachment>
+        </mso:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+  </head>
+
+  <!-- The Content of the Webpage -->
+
+  <body>
+    <h1
+      style="
+        color: #262dff;
+        font-size: 40px;
+        font-family: 'Comic Neue', cursive;
+        padding-left: 52px;
+        margin-top: 5vh;
+        text-align: center;
+      "
+    >
+      Whale Fun!
+    </h1>
+
+    <p style="text-align: center">
+      <img
+        src="whale.gif"
+        alt="whale-falling"
+        style="
+          padding: 0;
+          width: 400px;
+          height: 300px;
+          margin-top: 5vh;
+          box-shadow: 10px 5px 20px 5px #babfbc;
+        "
+      />
+    </p>
+    <p
+      style="
+        font-size: 30px;
+        color: #262dff;
+        font-family: 'Comic Neue', cursive;
+        text-align: center;
+      "
+    >
+      Welcome to Whale Fun! Type in your human text to have it translated into
+      'whale'. You can also have your translated text spoken for you to get a
+      better understanding of the whale language! Enjoy the website, and check
+      it frequently for all your whale-related needs. If you have any questions
+      or concerns about our website, please feel free to get in touch with us at
+      <span style="color: #2000ad">whale@gmail.com</span>!
+    </p>
+
+    <div
+      class="textboxContainer"
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <textarea
+        maxlength="250"
+        id="originalPhrase"
+        style="
+          resize: none;
+          padding: 15px;
+          width: 400px !important;
+          height: 70vh !important;
+          font-size: 20px;
+          font-family: 'Comic Neue', cursive;
+          padding: 10px;
+          margin-top: 10px;
+          border: none;
+          border-bottom: 7px solid #262dff;
+          box-sizing: border-box;
+        "
+        required
+        placeholder="ex. My name is Jonathan."
+      ></textarea>
+
+      <div class="iconContainer">
+        <img
+          src="arrow.png"
+          style="
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            padding: 15px;
+          "
+        />
+      </div>
+      <div
+        id="whaletalk"
+        style="
+          color: #000;
+          padding: 15px !important;
+          word-break: break-all;
+          float: right;
+          width: 400px !important;
+          height: 70vh !important;
+          font-size: 20px;
+          font-family: 'Comic Neue', cursive;
+          padding: 10px;
+          margin-top: 10px;
+          border: none;
+          border-bottom: 7px solid #262dff;
+          box-sizing: border-box;
+          background-color: white;
+        "
+      ></div>
+    </div>
+
+    <p
+      style="
+        text-align: center;
+        font-size: 25px;
+        color: #262dff;
+        font-family: 'Comic Neue', cursive;
+      "
+    >
+      ↘Click the button below to hear how the whale text sounds!↙
+    </p>
+    <div id="speakbtn" style="margin: 30px auto 75px">
+      <i class="fa-solid fa-volume-high"></i>
+    </div>
+
+    <p
+      id="thankYou"
+      style="
+        display: none;
+        text-align: center;
+        font-size: 40px;
+        color: #0ab5ff;
+        font-family: 'Comic Neue', cursive;
+        padding-top: 1vh;
+      "
+    >
+      Hope you enjoyed listening to your whale text spoken! Have a great day,
+      and thank you for using Whale Fun!
+    </p>
+
+    <!-- Two input boxes, one is locked and cannot be entered says your translated text will come here. The other person types in, then they click submit, the text of whale is given animated and the song is plauyed. whale fact shows up below the submit button... translate again button -->
+
+    <p
+      style="
+        text-align: center;
+        font-size: 35px;
+        color: #262dff;
+        font-family: 'Comic Neue', cursive;
+      "
+    >
+      Check Out The Below Video of Aquatic Life!
+    </p>
+
+    <p style="text-align: center">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DHUnz4dyb54?&autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </p>
+
+    <section class="slideSection" style="background: #9bddfa">
+      <p
+        id="Diy"
+        style="
+          text-align: center;
+          font-size: 70px;
+          color: #262dff;
+          font-family: 'Comic Neue', cursive;
+          padding-top: 5vh;
+        "
+      ></p>
+
+      <div id="slider" class="slideContainer">
+        <div class="image_container">
+          <img
+            id="sliderImage"
+            alt=""
+            src="https://www.wwf.org.uk/sites/default/files/styles/gallery_image/public/2019-04/humpback-whale.jpg?h=d0b527cd&itok=S_rQ-6bY"
+          />
+          <div
+            id="copyright-image"
+            style="
+              color: black;
+              font-family: 'Comic Neue', cursive;
+              font-size: 3vh;
+            "
+          >
+            © John Van Den Hende
+          </div>
+        </div>
+        <div class="articleContainer">
+          <div class="article_wrapper max-width-850">
+            <h2
+              id="sliderTextTitle"
+              style="
+                color: black;
+                font-family: 'Comic Neue', cursive;
+                font-size: 5vh;
+              "
+            >
+              1. WHALES ARE DIVIDED INTO TWO MAIN GROUPS
+            </h2>
+            <p
+              id="sliderText"
+              style="
+                color: black;
+                font-family: 'Comic Neue', cursive;
+                font-size: 3vh;
+              "
+            >
+              There are two types of whales: the baleen whales and the toothed
+              whales. Baleen whales, including humpbacks and blue whales, have
+              fibrous 'baleen' plates in their mouths instead of teeth, which
+              help them filter out and consume huge quantities of krill,
+              plankton, and crustaceans. Whereas toothed whales, such as orcas,
+              beluga and sperm whales, have teeth which enable them to feed on
+              larger prey such as fish and squid. <br />All dolphin families,
+              including porpoises, are also classified as whales, as they are
+              more related to their toothed counterparts.&nbsp;
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p
+      style="
+        text-align: center;
+        font-size: 35px;
+        color: #262dff;
+        font-family: 'Comic Neue', cursive;
+        padding-bottom: 5vh;
+      "
+    >
+      About: <span id="AboutIt"></span>
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

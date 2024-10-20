@@ -1,0 +1,130 @@
+.portfolio-p-header {
+  height: 300px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.portfolio-p-header .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/main_background.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+.portfolio-p-header .portfolio-p-header-title {
+  max-width: 1300px;
+  width: 100%;
+}
+.portfolio-p-header h2,
+.portfolio-p-header h4 {
+  padding-top: 150px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #000000;
+  text-align: right;
+}
+.portfolio-p-header h4 {
+  padding-top: 5px;
+}
+
+.main {
+  padding: 0;
+}
+.main .main-container {
+  max-width: none;
+  background-color: #000;
+  padding: 50px 0;
+}
+.main .main-container .video-line {
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.main .main-container .video-container,
+.main .main-container .video-description {
+  padding: 10px;
+  position: relative;
+}
+.main .main-container .video-container .video-wrap,
+.main .main-container .video-description .video-wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 563px;
+}
+.main .main-container .video-container .previous-btn,
+.main .main-container .video-container .next-btn,
+.main .main-container .video-description .previous-btn,
+.main .main-container .video-description .next-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  color: white;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+.main .main-container .video-container .previous-btn:hover,
+.main .main-container .video-container .next-btn:hover,
+.main .main-container .video-description .previous-btn:hover,
+.main .main-container .video-description .next-btn:hover {
+  background-color: #333;
+}
+.main .main-container .video-container .previous-btn,
+.main .main-container .video-description .previous-btn {
+  left: 20px;
+}
+.main .main-container .video-container .next-btn,
+.main .main-container .video-description .next-btn {
+  right: 20px;
+}
+.main .main-container .video-description {
+  padding: 30px 100px 100px;
+}
+.main .main-container .video-description .video-description-wrap {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  color: white;
+}
+.main .main-container .video-description .video-description-wrap .title {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.main .main-container .video-description .video-description-wrap .subtitle {
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+.main .main-container .video-description .video-description-wrap .tools {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #200b2a;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: #fff !important;
+  fill: black !important;
+  stroke: black !important;
+}/*# sourceMappingURL=video.css.map */

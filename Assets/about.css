@@ -1,0 +1,293 @@
+.about-header {
+  height: 300px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about-header .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/main_background.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+.about-header .about-header-title {
+  max-width: 1300px;
+  width: 100%;
+}
+.about-header h2 {
+  padding-top: 150px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #000000;
+  text-align: right;
+}
+
+.main .main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-container .main-about-img {
+  text-align: center;
+}
+.main .main-container .main-about-img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+}
+.main .main-container .main-information {
+  padding-top: 30px;
+}
+.main .main-container .main-information .main-description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.63em;
+  max-width: 600px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #200b2a;
+  padding: 70px 0;
+}
+.skills .skills-container {
+  width: 100%;
+}
+.skills .skills-container .section-title p {
+  text-align: center;
+  color: #ffffff;
+}
+.skills .skills-container .skills-inner {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skills .skills-container .skills-inner .skills-wrap {
+  padding: 15px;
+}
+.skills .skills-container .skills-inner .skills-wrap .single-skill {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills .skills-container .skills-inner .skills-wrap .single-skill .single-skill-title {
+  font-weight: 500;
+}
+
+.activities {
+  padding: 0;
+  height: 450px;
+}
+.activities .swiper {
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+}
+.activities .activities-container {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.activities .activities-container .activity-wrap {
+  padding: 150px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: aqua;
+}
+.activities .activities-container .activity-wrap .activity-title {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+.activities .activities-container .activity-wrap .activity-description {
+  font-size: 16px;
+  color: #e1e1e1;
+  padding-bottom: 20px;
+}
+.activities .activities-container .activity-wrap .activity-text {
+  color: #ffffff;
+  font-size: 20px;
+}
+.activities .activities-container .activity-wrap .modal-btn {
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+.activities .activities-container .activity-wrap .modal-btn:hover {
+  background-color: #fff;
+  color: #200b2a;
+}
+.activities .activities-container .activity-wrap.ski {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/skill_ski.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/first_th.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.wvyb {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/wvyb_th.jpg);
+  background-position: top;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.city {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/city.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.app {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/app.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.apc {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/apc.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.coding {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/coding.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.stash {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/stash_th.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.agrc {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/argc_th.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.activities .activities-container .activity-wrap.golf {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/golf_th.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.nonvisible {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#modal {
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  max-height: 0;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50vw;
+  transition: 0.3s ease-in-out all;
+  overflow: hidden;
+}
+#modal.open {
+  width: 100vw;
+  max-height: 100vh;
+  z-index: 99999999;
+}
+#modal.open .modal-close-layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#modal.open .modal-container {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  max-width: 1200px;
+  max-height: 90vh;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+#modal.open .modal-container .modal-close-btn {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #200b2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+#modal.open .modal-container .modal-content {
+  overflow-y: scroll;
+  height: 100%;
+  padding: 20px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#modal.open .modal-container .modal-content .modal-title {
+  padding-bottom: 20px;
+}
+#modal.open .modal-container .modal-content .modal-period {
+  padding-bottom: 20px;
+  font-style: italic;
+}
+#modal.open .modal-container .modal-content .modal-img-outer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+#modal.open .modal-container .modal-content .modal-img-outer .modal-img-container {
+  width: calc(50% - 10px);
+}
+#modal.open .modal-container .modal-content .modal-img-outer .modal-img-container .modal-img {
+  max-width: 100%;
+}
+#modal.open .modal-container .modal-content::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 3px;
+}
+#modal.open .modal-container .modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+#modal.open .modal-container .modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+#modal.open .modal-container .modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 3px;
+}/*# sourceMappingURL=about.css.map */
